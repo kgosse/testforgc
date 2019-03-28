@@ -45,6 +45,7 @@ func main() {
 	}
 	questionOne(names, firstnames, lastnames)
 	questionTwo(firstnames)
+	questionThree(lastnames)
 }
 
 func questionOne(n, f, l se.List) {
@@ -58,6 +59,15 @@ func questionTwo(f se.List) {
 	fmt.Printf("\n\t*** Question #2 ***\n")
 	fmt.Printf("The ten most common first names are:\n")
 	names := f.GetTopElements(10)
+	for i := 0; i < 10; i++ {
+		fmt.Printf("\t%s (%d)\n", names[i].Name, names[i].Weight)
+	}
+}
+
+func questionThree(l se.List) {
+	fmt.Printf("\n\t*** Question #3 ***\n")
+	fmt.Printf("The ten most common last names are:\n")
+	names := l.GetTopElements(10)
 	for i := 0; i < 10; i++ {
 		fmt.Printf("\t%s (%d)\n", names[i].Name, names[i].Weight)
 	}

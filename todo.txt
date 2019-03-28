@@ -5,7 +5,7 @@
     * extract firtname and lastname
   - add questionOne (done)
   - add questionTwo (done)
-  * add questionThree
+  - add questionThree (done)
   * add questionFourA
   * add questionFourB
 * searchengine package
