@@ -1,7 +1,7 @@
 * main package
   - use f as command-line option for the input file (done)
   * file
-    * reade file
+    - read file (done)
     * extract firtname and lastname
   * add questionOne
   * add questionTwo
