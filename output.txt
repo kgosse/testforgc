@@ -1,0 +1,31 @@
+
+	*** Question #1 ***
+There are 91801 unique full names
+There are 0 unique first names
+There are 0 unique last names
+
+	*** Question #2 ***
+The ten most common first names are:
+	Tobin (58)
+	Amelia (54)
+	Marielle (53)
+	Adrien (51)
+	Bulah (51)
+	Lura (51)
+	Jabari (49)
+	Kenna (49)
+	Rusty (49)
+	Mitchell (49)
+
+	*** Question #3 ***
+The ten most common last names are:
+	Blanda (269)
+	Kuphal (256)
+	Mann (250)
+	Donnelly (243)
+	Hahn (242)
+	Hilll (241)
+	Deckow (240)
+	Ondricka (240)
+	Smitham (239)
+	Thompson (239)
