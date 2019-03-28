@@ -28,6 +28,8 @@ $ ./testforgc -f your-input-file.list
 $ ./testforgc
 ```
 
+The file output.txt shows what the program returns when executed with the default input file (test-input-file.list)
+
 ## Running the (unit) tests
 
 ```
