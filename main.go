@@ -3,11 +3,12 @@ package main
 import (
 	"bufio"
 	"flag"
-	"fmt"
 	"io"
 	"log"
 	"os"
 	"regexp"
+
+	se "github.com/kgosse/testforgc/searchengine"
 )
 
 var re = regexp.MustCompile(`^([a-zA-Z]+), ([a-zA-Z]+) -- .+\n$`)
@@ -21,9 +22,11 @@ func main() {
 	handleError(err)
 
 	reader := bufio.NewReader(file)
+	names := se.NewList()
+	lastnames := se.NewList()
+	firstnames := se.NewList()
 
 	var line string
-	cpt := 0
 	for {
 		line, err = reader.ReadString('\n')
 		if err == io.EOF {
@@ -34,14 +37,10 @@ func main() {
 		if re.MatchString(line) {
 			n := re.FindStringSubmatch(line)
 			l, f := n[1], n[2]
-			fmt.Printf("%s, %s\n", l, f)
-			cpt++
+			names.Add(l + ", " + f)
+			lastnames.Add(l)
+			firstnames.Add(f)
 		}
-
-		if cpt == 10 {
-			break
-		}
-
 	}
 }
 

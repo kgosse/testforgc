@@ -21,6 +21,13 @@ func NewList() List {
 
 // Add inserts a new element into the list
 func (l List) Add(s string) {
+	l.Indexes = append(l.Indexes, s)
+	v, ok := l.Set[s]
+	if !ok {
+		l.Set[s] = 1
+	} else {
+		l.Set[s] = v + 1
+	}
 }
 
 // GetUniqueElementsCount returns the number of uniq elements

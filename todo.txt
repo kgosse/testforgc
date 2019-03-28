@@ -15,7 +15,7 @@
     - implement NewList (done)
   * Add func
     * create test
-    * implement Add
+    - implement Add (done)
   * GetUniqueElementsCount func
     * create test
     * implement GetUniqueElementsCount
