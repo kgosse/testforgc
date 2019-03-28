@@ -9,7 +9,7 @@
   * add questionFourA
   * add questionFourB
 * searchengine package
-  * create structures
+  - create structures (done)
   * NewList func
     * create test
     * implement NewList
