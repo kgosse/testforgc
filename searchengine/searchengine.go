@@ -1,5 +1,7 @@
 package searchengine
 
+import "sort"
+
 // Item is a single element
 type Item struct {
 	Name   string
@@ -43,5 +45,12 @@ func (l List) GetUniqueElementsCount() int {
 
 // GetTopElements returns the top n elements (by weight)
 func (l List) GetTopElements(n int) []Item {
-	return nil
+	var temp []Item
+	for k, v := range l.Set {
+		temp = append(temp, Item{k, v})
+	}
+	sort.Slice(temp, func(i, j int) bool {
+		return temp[i].Weight > temp[j].Weight
+	})
+	return temp[0:n]
 }

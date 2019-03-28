@@ -44,6 +44,7 @@ func main() {
 		}
 	}
 	questionOne(names, firstnames, lastnames)
+	questionTwo(firstnames)
 }
 
 func questionOne(n, f, l se.List) {
@@ -51,6 +52,15 @@ func questionOne(n, f, l se.List) {
 	fmt.Printf("There are %d unique full names\n", n.GetUniqueElementsCount())
 	fmt.Printf("There are %d unique first names\n", f.GetUniqueElementsCount())
 	fmt.Printf("There are %d unique last names\n", l.GetUniqueElementsCount())
+}
+
+func questionTwo(f se.List) {
+	fmt.Printf("\n\t*** Question #2 ***\n")
+	fmt.Printf("The ten most common first names are:\n")
+	names := f.GetTopElements(10)
+	for i := 0; i < 10; i++ {
+		fmt.Printf("\t%s (%d)\n", names[i].Name, names[i].Weight)
+	}
 }
 
 func handleError(e error) {
