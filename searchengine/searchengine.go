@@ -33,7 +33,11 @@ func (l List) Add(s string) {
 // GetUniqueElementsCount returns the number of uniq elements
 func (l List) GetUniqueElementsCount() int {
 	ct := 0
-
+	for _, v := range l.Set {
+		if v == 1 {
+			ct++
+		}
+	}
 	return ct
 }
 
