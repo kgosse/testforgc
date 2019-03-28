@@ -16,9 +16,9 @@
   * Add func
     * create test
     * implement Add
-  * GetUniqElementsCount func
+  * GetUniqueElementsCount func
     * create test
-    * implement GetUniqElementsCount
+    * implement GetUniqueElementsCount
   * GetTopElements func
     * create test
     * implement GetTopElements
