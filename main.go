@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"flag"
+	"fmt"
 	"io"
 	"log"
 	"os"
@@ -42,6 +43,14 @@ func main() {
 			firstnames.Add(f)
 		}
 	}
+	questionOne(names, firstnames, lastnames)
+}
+
+func questionOne(n, f, l se.List) {
+	fmt.Printf("\n\t*** Question #1 ***\n")
+	fmt.Printf("There are %d unique full names\n", n.GetUniqueElementsCount())
+	fmt.Printf("There are %d unique first names\n", f.GetUniqueElementsCount())
+	fmt.Printf("There are %d unique last names\n", l.GetUniqueElementsCount())
 }
 
 func handleError(e error) {
