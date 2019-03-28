@@ -11,8 +11,8 @@
 * searchengine package
   - create structures (done)
   * NewList func
-    * create test
-    * implement NewList
+    - create test (done)
+    - implement NewList (done)
   * Add func
     * create test
     * implement Add

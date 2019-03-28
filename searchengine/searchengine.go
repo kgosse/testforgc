@@ -14,7 +14,9 @@ type List struct {
 
 // NewList creates an new empty List
 func NewList() List {
-	return List{}
+	l := List{}
+	l.Set = make(map[string]int)
+	return l
 }
 
 // Add inserts a new element into the list
